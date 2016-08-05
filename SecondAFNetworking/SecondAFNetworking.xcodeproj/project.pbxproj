@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041A0D0A1D5443C400035194 /* SFHttpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A0D091D5443C400035194 /* SFHttpTools.m */; };
 		041EF54A1D5368250021C1B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041EF5491D5368250021C1B6 /* main.m */; };
 		041EF54D1D5368250021C1B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 041EF54C1D5368250021C1B6 /* AppDelegate.m */; };
 		041EF5501D5368250021C1B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041EF54F1D5368250021C1B6 /* ViewController.m */; };
@@ -14,12 +15,13 @@
 		041EF5561D5368250021C1B6 /* SecondAFNetworking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041EF5541D5368250021C1B6 /* SecondAFNetworking.xcdatamodeld */; };
 		041EF5581D5368250021C1B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041EF5571D5368250021C1B6 /* Assets.xcassets */; };
 		041EF55B1D5368250021C1B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041EF5591D5368250021C1B6 /* LaunchScreen.storyboard */; };
-		041EF5641D536B1B0021C1B6 /* SFHttpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 041EF5631D536B1B0021C1B6 /* SFHttpTools.m */; };
 		041EF5661D5380400021C1B6 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 041EF5651D5380400021C1B6 /* placeholder.png */; };
 		BD3E1551E6E16370AECF73E2 /* libPods-SecondAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF180193CE8DE15059F57B4 /* libPods-SecondAFNetworking.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041A0D081D5443C400035194 /* SFHttpTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHttpTools.h; sourceTree = "<group>"; };
+		041A0D091D5443C400035194 /* SFHttpTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHttpTools.m; sourceTree = "<group>"; };
 		041EF5451D5368250021C1B6 /* SecondAFNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondAFNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041EF5491D5368250021C1B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		041EF54B1D5368250021C1B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,8 +33,6 @@
 		041EF5571D5368250021C1B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041EF55A1D5368250021C1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041EF55C1D5368250021C1B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		041EF5621D536B1B0021C1B6 /* SFHttpTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHttpTools.h; sourceTree = "<group>"; };
-		041EF5631D536B1B0021C1B6 /* SFHttpTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHttpTools.m; sourceTree = "<group>"; };
 		041EF5651D5380400021C1B6 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		3CF180193CE8DE15059F57B4 /* libPods-SecondAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SecondAFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E18099F401932CCB2A89697 /* Pods-SecondAFNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondAFNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecondAFNetworking/Pods-SecondAFNetworking.debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041A0D071D5443C400035194 /* SecondAFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				041A0D081D5443C400035194 /* SFHttpTools.h */,
+				041A0D091D5443C400035194 /* SFHttpTools.m */,
+			);
+			path = SecondAFNetworking;
+			sourceTree = "<group>";
+		};
 		041EF53C1D5368250021C1B6 = {
 			isa = PBXGroup;
 			children = (
@@ -72,13 +81,12 @@
 		041EF5471D5368250021C1B6 /* SecondAFNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				041A0D071D5443C400035194 /* SecondAFNetworking */,
 				041EF5651D5380400021C1B6 /* placeholder.png */,
 				041EF54B1D5368250021C1B6 /* AppDelegate.h */,
 				041EF54C1D5368250021C1B6 /* AppDelegate.m */,
 				041EF54E1D5368250021C1B6 /* ViewController.h */,
 				041EF54F1D5368250021C1B6 /* ViewController.m */,
-				041EF5621D536B1B0021C1B6 /* SFHttpTools.h */,
-				041EF5631D536B1B0021C1B6 /* SFHttpTools.m */,
 				041EF5511D5368250021C1B6 /* Main.storyboard */,
 				041EF5571D5368250021C1B6 /* Assets.xcassets */,
 				041EF5591D5368250021C1B6 /* LaunchScreen.storyboard */,
@@ -236,7 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041EF5641D536B1B0021C1B6 /* SFHttpTools.m in Sources */,
+				041A0D0A1D5443C400035194 /* SFHttpTools.m in Sources */,
 				041EF5501D5368250021C1B6 /* ViewController.m in Sources */,
 				041EF54D1D5368250021C1B6 /* AppDelegate.m in Sources */,
 				041EF5561D5368250021C1B6 /* SecondAFNetworking.xcdatamodeld in Sources */,
